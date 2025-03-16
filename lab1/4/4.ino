@@ -1,8 +1,12 @@
+#include <LiquidCrystal.h>
 int count = 0;
 char down = 'f';
 
+
+
 void printNum(const unsigned int counter)
 {
+  LiquidCrystal lcd;
 	switch(counter)
 	{
 		case 0:

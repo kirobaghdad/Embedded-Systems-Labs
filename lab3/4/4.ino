@@ -8,14 +8,16 @@ void Timer2_init(void)
   TCCR2A |= (1 << COM2A0);
 }
 
-void setup() {
+void setup()
+{
   // put your setup code here, to run once:
   DDRB |= (1 << 3);
   Timer2_init();
 
+  sei();
 }
 
-void loop() {
+void loop()
+{
   // put your main code here, to run repeatedly:
-
 }
